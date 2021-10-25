@@ -1,0 +1,193 @@
+-- By ROOT44
+-- Version: v2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local exit = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local Scripts = Instance.new("TextButton")
+local BTOOLS = Instance.new("TextButton")
+local owlhub = Instance.new("TextButton")
+local walkspeed = Instance.new("TextButton")
+local VGHub = Instance.new("TextButton")
+local InfiniteYield = Instance.new("TextButton")
+local darkdexv4 = Instance.new("TextButton")
+local visit = Instance.new("TextLabel")
+local infjump = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+main.Position = UDim2.new(0.313607216, 0, 0.145715341, 0)
+main.Size = UDim2.new(0, 345, 0, 296)
+main.Visible = true
+main.Active = true
+main.Draggable = true
+
+exit.Name = "exit"
+exit.Parent = main
+exit.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+exit.Position = UDim2.new(0.875588238, 0, 0, 0)
+exit.Size = UDim2.new(0, 41, 0, 34)
+exit.Font = Enum.Font.SourceSans
+exit.Text = "X"
+exit.TextColor3 = Color3.fromRGB(255, 0, 0)
+exit.TextScaled = true
+exit.TextSize = 14.000
+exit.TextWrapped = true
+exit.MouseButton1Down:connect(function()
+main.Visible = false	
+end)
+
+ImageLabel.Parent = main
+ImageLabel.Active = true
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(-0.00177802518, 0, 0.633067191, 0)
+ImageLabel.Selectable = true
+ImageLabel.Size = UDim2.new(0, 127, 0, 108)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=7826911557"
+
+Scripts.Name = "Scripts"
+Scripts.Parent = main
+Scripts.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Scripts.BorderColor3 = Color3.fromRGB(170, 0, 0)
+Scripts.Position = UDim2.new(0.29319793, 0, 0, 0)
+Scripts.Size = UDim2.new(0, 142, 0, 34)
+Scripts.Font = Enum.Font.SourceSans
+Scripts.Text = "Scripts"
+Scripts.TextColor3 = Color3.fromRGB(255, 0, 0)
+Scripts.TextScaled = true
+Scripts.TextSize = 17.000
+Scripts.TextWrapped = true
+
+BTOOLS.Name = "BTOOLS"
+BTOOLS.Parent = main
+BTOOLS.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+BTOOLS.BorderColor3 = Color3.fromRGB(170, 0, 0)
+BTOOLS.Position = UDim2.new(0.00289855083, 0, 0.168918923, 0)
+BTOOLS.Size = UDim2.new(0, 131, 0, 33)
+BTOOLS.Font = Enum.Font.SourceSans
+BTOOLS.Text = "BTOOLS"
+BTOOLS.TextColor3 = Color3.fromRGB(255, 0, 0)
+BTOOLS.TextScaled = true
+BTOOLS.TextSize = 18.000
+BTOOLS.TextWrapped = true
+BTOOLS.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/ROOT44x/BTOOLS/main/BTOOLS.txt'),true))()	
+end)
+
+owlhub.Name = "owlhub"
+owlhub.Parent = main
+owlhub.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+owlhub.BorderColor3 = Color3.fromRGB(170, 0, 0)
+owlhub.Position = UDim2.new(0.6115942, 0, 0.168918923, 0)
+owlhub.Size = UDim2.new(0, 134, 0, 33)
+owlhub.Font = Enum.Font.SourceSans
+owlhub.Text = "Owl Hub"
+owlhub.TextColor3 = Color3.fromRGB(255, 0, 0)
+owlhub.TextScaled = true
+owlhub.TextSize = 18.000
+owlhub.TextWrapped = true
+owlhub.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();	
+end)
+
+walkspeed.Name = "walkspeed"
+walkspeed.Parent = main
+walkspeed.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+walkspeed.BorderColor3 = Color3.fromRGB(170, 0, 0)
+walkspeed.Position = UDim2.new(0, 0, 0.331081092, 0)
+walkspeed.Size = UDim2.new(0, 133, 0, 33)
+walkspeed.Font = Enum.Font.SourceSans
+walkspeed.Text = "Walk Speed Gui"
+walkspeed.TextColor3 = Color3.fromRGB(255, 0, 0)
+walkspeed.TextScaled = true
+walkspeed.TextSize = 18.000
+walkspeed.TextWrapped = true
+walkspeed.MouseButton1Down:connect(function()
+loadstring(game:GetObjects("rbxassetid://1384487208")[1].Source)()
+end)
+
+VGHub.Name = "V.G Hub"
+VGHub.Parent = main
+VGHub.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+VGHub.BorderColor3 = Color3.fromRGB(170, 0, 0)
+VGHub.Position = UDim2.new(0.6115942, 0, 0.310810804, 0)
+VGHub.Size = UDim2.new(0, 134, 0, 39)
+VGHub.Font = Enum.Font.SourceSans
+VGHub.Text = "V.G Hub"
+VGHub.TextColor3 = Color3.fromRGB(255, 0, 0)
+VGHub.TextScaled = true
+VGHub.TextSize = 18.000
+VGHub.TextWrapped = true
+VGHub.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+InfiniteYield.Name = "InfiniteYield"
+InfiniteYield.Parent = main
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+InfiniteYield.BorderColor3 = Color3.fromRGB(170, 0, 0)
+InfiniteYield.Position = UDim2.new(0.6115942, 0, 0.488076895, 0)
+InfiniteYield.Size = UDim2.new(0, 134, 0, 42)
+InfiniteYield.Font = Enum.Font.SourceSans
+InfiniteYield.Text = "Infinite Yield\\n"
+InfiniteYield.TextColor3 = Color3.fromRGB(255, 0, 0)
+InfiniteYield.TextSize = 24.000
+InfiniteYield.TextWrapped = true
+InfiniteYield.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"), "IY_FE") "discord.gg/dYHag43eeU"
+end)
+
+darkdexv4.Name = "dark dex v4"
+darkdexv4.Parent = main
+darkdexv4.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+darkdexv4.BorderColor3 = Color3.fromRGB(170, 0, 0)
+darkdexv4.Position = UDim2.new(0.6115942, 0, 0.658783793, 0)
+darkdexv4.Size = UDim2.new(0, 134, 0, 45)
+darkdexv4.Font = Enum.Font.SourceSans
+darkdexv4.Text = "Dark Dex V4"
+darkdexv4.TextColor3 = Color3.fromRGB(255, 0, 0)
+darkdexv4.TextScaled = true
+darkdexv4.TextSize = 18.000
+darkdexv4.TextWrapped = true
+darkdexv4.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://gist.githubusercontent.com/DinosaurXxX/b757fe011e7e600c0873f967fe427dc2/raw/ee5324771f017073fc30e640323ac2a9b3bfc550/dark%2520dex%2520v4'),true))()	
+end)
+
+visit.Name = "visit"
+visit.Parent = main
+visit.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+visit.BorderColor3 = Color3.fromRGB(170, 0, 0)
+visit.Position = UDim2.new(0.382608682, 0, 0.868243217, 0)
+visit.Size = UDim2.new(0, 212, 0, 39)
+visit.Font = Enum.Font.SourceSans
+visit.Text = "Visit root44.boards.net"
+visit.TextColor3 = Color3.fromRGB(255, 0, 0)
+visit.TextScaled = true
+visit.TextSize = 18.000
+visit.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+visit.TextWrapped = true
+
+infjump.Name = "infjump"
+infjump.Parent = main
+infjump.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+infjump.BorderColor3 = Color3.fromRGB(170, 0, 0)
+infjump.Position = UDim2.new(0.0012422502, 0, 0.484714836, 0)
+infjump.Size = UDim2.new(0, 133, 0, 33)
+infjump.Font = Enum.Font.SourceSans
+infjump.Text = "Inf Jump"
+infjump.TextColor3 = Color3.fromRGB(255, 0, 0)
+infjump.TextScaled = true
+infjump.TextSize = 18.000
+infjump.TextWrapped = true
+infjump.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/ROOT44x/infjump/main/INFJUMP.txt'),true))()	
+end)
